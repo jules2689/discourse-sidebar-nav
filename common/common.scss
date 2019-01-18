@@ -1,6 +1,16 @@
+// Hacks
+
+.category-logo.aspect-image {
+    --aspect-ratio: none !important;
+    width: 100%;
+    max-width: 100%;
+}
+
 .category-list tbody .latest {
   padding-right: 10px;
 }
+
+// Sidebar
 
 @media screen and (min-width: 1110px) {
   .navigation-topics,
