@@ -9,6 +9,21 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .navigation-topics,
+  .categories-list,
+  .tags-page,
+  body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) { 
+    .wrap {
+      max-width: 80%;
+    }
+  }
+
+  .category-list tbody .latest {
+    padding: 0 10px 10px 10px;
+  }
+}
+
 // Only applying to main topic lists over 768px wide 
 @media screen and (min-width: 768px) {
   .navigation-topics,
