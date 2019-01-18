@@ -79,13 +79,15 @@
       .topic-list,
       .category-list, { 
         th {
-          padding-top: 0; // Align to top of nav
+          padding-top: 10px;
+          padding-left: 10px;
         }
       }
     }
     .latest-topic-list .table-heading, 
     .top-topic-list .table-heading {
-      padding-top: 0;
+      padding-top: 10px;
+      padding-left: 10px;
     }
     
     .list-controls {
