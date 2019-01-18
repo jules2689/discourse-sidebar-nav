@@ -1,18 +1,60 @@
 // Hacks
 
+// Make the table fit in mobile
+
+@media screen and (max-width: 600px) {
+  .topic-list-item td.main-link {
+    display: block;
+  }
+
+  .topic-list-item td:not(.main-link):not(.bulk-select) {
+    display: inline-block;
+  }
+
+  .topic-list-item .num.views {
+      display: none !important;
+  }
+
+  .topic-list-item .num.posts::before {
+    content: 'Replies';
+  }
+
+  .topic-list-item .num.activity::before {
+    content: 'Activity';
+  }
+
+  .topic-list thead th:not(:first-of-type):not(.default) {
+      display: none;
+  }
+}
+
+// Make the solved topic check the success color
+
+.topic-status .d-icon-check-square-o {
+    color: $success;
+}
+
+// Make pinned items lightly highlighted
+
 .pinned {
     background-color: $highlight + rgb(255,255,89);
 }
 
+// Make pinned item pins the teritary color
+
 .topic-list-icons .d-icon-thumbtack, .latest-topic-list .d-icon-thumbtack, .top-topic-list .d-icon-thumbtack, .topic-list .d-icon-thumbtack {
     color: $tertiary;
 }
+
+// Fix category images in the sidebar
 
 .category-logo.aspect-image {
     --aspect-ratio: none !important;
     width: 100%;
     max-width: 100%;
 }
+
+// Fix the right padding in the table (was 0)
 
 .category-list tbody .latest {
   padding-right: 10px;
