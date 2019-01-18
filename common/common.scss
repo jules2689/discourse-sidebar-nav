@@ -210,68 +210,26 @@
       }
     }
   }
-  
-  .tags-page { // Tags page markup is a bit of a nested mess
-    #main-outlet {
-      display: block;
-      
-      #list-area {
-        display: grid;
-        grid-column-gap: 1.5em;
-        @if $sidebar-alignment == "left" {
-          grid-template-columns: 3fr 9fr; // 12 column grid
-          grid-template-areas: 
-          "alerts alerts"
-          "pins pins"
-          "nav topic-list";
-        } @else {
-          grid-template-columns:  9fr 3fr;
-          grid-template-areas: 
-          "alerts alerts"
-          "pins pins"
-          "topic-list nav";
-        }
-        .container:first-of-type { 
-          grid-area: alerts;
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .container:nth-of-type(2) { 
-          grid-area: pins;
-        }
-        .list-controls {
-          grid-area: nav;
-        }
-        .contents {
-          grid-area: topic-list;
-        }     
-        
-        .tag-notifications-button {
-          margin-bottom: 5px;
-          margin-left: .5em;
-          button {
-            margin-top: -4px;
-          }
-        }
-
-
-      }
-    }
-  }
-
-  .tags-page.staff {
-    #main-outlet #list-area {
-      .admin-tag {
-        order: 9;
-        flex: 0 1 calc(50% - .25em);
-        margin-bottom: 5px;
-        height: 2em;
-        &:nth-of-type(1) {
-          margin-right: auto;
-          
-        }
-      }
-    }
-  }
 }
 
+#bulk-select > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
+  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s, visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s, background-color 2s, transform 0.5s;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0px;
+  width: 63px;
+  height: 63px;
+  border-radius: 40px;
+  position: fixed;
+  top: 120px;
+  right: 50px;
+  z-index: 999;
+  background-color: #007ACE;
+  color: #fafafa;
+  white-space: nowrap;
+  overflow: hidden;
+}
