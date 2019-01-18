@@ -169,8 +169,7 @@
         @if $sidebar-alignment == left {
           &>li.active>a {
             &:after {
-              content: "\f178";
-              font-family: fontawesome;
+              content: "&#x2713;";
               display: inline;
               float: right;
             }
