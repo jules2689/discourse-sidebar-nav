@@ -1,5 +1,13 @@
 // Hacks
 
+.pinned {
+    background-color: $highlight + rgb(255,255,89);
+}
+
+.topic-list-icons .d-icon-thumbtack, .latest-topic-list .d-icon-thumbtack, .top-topic-list .d-icon-thumbtack, .topic-list .d-icon-thumbtack {
+    color: $tertiary;
+}
+
 .category-logo.aspect-image {
     --aspect-ratio: none !important;
     width: 100%;
