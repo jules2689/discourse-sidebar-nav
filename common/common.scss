@@ -169,7 +169,7 @@
         @if $sidebar-alignment == left {
           &>li.active>a {
             &:after {
-              content: "&#x2713;";
+              content: "✓";
               display: inline;
               float: right;
             }
