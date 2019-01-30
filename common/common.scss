@@ -1,5 +1,11 @@
 // Hacks
 
+// Sidebar category font size
+
+.category-heading p {
+  font-size: 1.0157em;
+}
+
 // Make the table fit in mobile
 
 @media screen and (max-width: 600px) {
